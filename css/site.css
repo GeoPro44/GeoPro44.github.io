@@ -1,0 +1,25 @@
+.logo { 
+	height: 100px;
+	width: 200px; 
+	overflow: hidden; 
+}
+
+.logo2 { 
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.logo3 {
+    display: block;
+    max-width:200px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}
+
+.image-full {
+    background: url("./img/image.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
