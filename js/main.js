@@ -40,17 +40,15 @@ app.config(function ($routeProvider) {
 	
 app.controller('NavController', function ($scope, $rootScope, $location, $timeout) {	
 
-	$scope.nav2 = function(place) {
-	
-		//console.log('Nav Button pressed: ' + place);		
-		$location.path('/');
-
-		$timeout(function() {
-			$rootScope.$broadcast('nav-button-clicked', { 'page': place });
-		}, 1);
-
-		
+	$scope.navButton = function(place) {	
+		console.log('Nav Button pressed: ');	
+		if (place) {
+			$location.path(place);
+		} else {
+			$location.path('/');
+		}
 	}
+	
 });
 
 app.controller('HomeController', function ($scope, $document, $timeout) {

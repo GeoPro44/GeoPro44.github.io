@@ -13,7 +13,7 @@ var db = require("mongojs").connect(databaseUrl, collections);*/
 var app = express();
 
 //var multipartMiddleware = multipart();
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 4000);
 app.use(morgan('dev')); 
 app.use(express.static(path.join(__dirname, '')));
 
